@@ -25,6 +25,7 @@ header {
 }
 
 #headerLink:visited,
+#headerLink:active ,
 #headerLink:focus {
   color: white;
   
