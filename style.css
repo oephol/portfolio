@@ -6,7 +6,7 @@
   
 }
 
-body {
+body{
   font-family: 'Segoe UI', sans-serif;
   background-color: #f7f9fc;
   color: #333;
@@ -62,8 +62,46 @@ header p {
   color: #73d0fc;
   margin: 0 15px;
 }
-
+#theme-toggle {
+  background-color: #4FC3F7;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+#theme-icon {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease-in-out;
+}
 /* Section spacing */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 20px 0;
+  width: 100%;
+}
+.filter-buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #4FC3F7;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.filter-buttons button:hover {
+  background-color: #73d0fc;
+  transform: scale(1.05);
+}
+.filter-buttons button.active {
+  background-color: #73d0fc;
+  color: #fff;
+}
 main section {
   background-color: white;
   margin: 20px auto;
@@ -72,13 +110,52 @@ main section {
   max-width: 800px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
-
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.contact-form button {
+  background-color: #4FC3F7;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.dark-mode .contact-form button {
+  background-color: #444;
+  color: #ddd;
+  border: 1px solid #8a8989;
+}
+.contact-form button:hover {
+  background-color: #73d0fc;
+}
+#form-error{
+  display: none;
+  color: white;
+  background: rgb(248, 94, 94);
+  font-size: 1.2rem;
+  border: 2px solid rgb(194, 0, 0);
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+}
 /* Footer */
 footer {
   text-align: center;
   padding: 1rem;
   margin-top: 0px;
-  color: #fff;
+  color: #bbb;
   background-color: #222;
   height: 400px;
 }
@@ -89,6 +166,12 @@ footer {
   gap: 1rem;
   margin-top: 20px;
 }
+#social-links p {
+  width: 100%;
+  text-align: center;
+  color: #bbb;
+  font-size: 1.2rem;
+}
 #social-links a img{
   margin: 10px;
   width: 50px;
@@ -98,6 +181,21 @@ footer {
 #social-links a img:hover{
   transform: scale(1.5);
   margin: 0 15px;
+}
+
+
+.dark-mode {
+  background-color: #333333;
+  color: #eee;
+}
+.dark-mode main section {
+  background-color: #444;
+  color: #ddd;
+  border: 1px solid #555;
+} 
+.dark-mode header,
+.dark-mode footer {
+  background-color: #222;
 }
 
 @media (max-width: 700px) {
