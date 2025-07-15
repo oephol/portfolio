@@ -79,27 +79,28 @@ header p {
 }
 /* Section spacing */
 .filter-buttons {
+  margin-bottom: 1rem;
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin: 20px 0;
-  width: 100%;
+  gap: 10px;
+  flex-wrap: wrap;
 }
+
 .filter-buttons button {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  background-color: #4FC3F7;
+  background-color: #4fc3f7;
   color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.2s ease;
 }
+
 .filter-buttons button:hover {
-  background-color: #73d0fc;
-  transform: scale(1.05);
+  background-color: #039be5;
 }
-.filter-buttons button.active {
-  background-color: #73d0fc;
+
+.filter-buttons button:active {
+  background-color: #16465c;
   color: #fff;
 }
 main section {
@@ -123,6 +124,12 @@ main section {
   width: 100%;
   box-sizing: border-box;
 }
+.dark-mode .contact-form input,
+.dark-mode .contact-form textarea {
+  background-color: #696969;
+  color: #ddd;
+  border: 1px solid #888;
+}
 .contact-form button {
   background-color: #4FC3F7;
   color: white;
@@ -133,7 +140,7 @@ main section {
   transition: background-color 0.3s ease-in-out;
 }
 .dark-mode .contact-form button {
-  background-color: #444;
+  background-color: #696969;
   color: #ddd;
   border: 1px solid #8a8989;
 }
