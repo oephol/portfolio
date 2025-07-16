@@ -66,9 +66,9 @@ header p {
   background-color: #4FC3F7;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
-  margin: 10px;
-  border-radius: 5px;
+  padding: 5px 6px;
+  margin: 0 10px;
+  border-radius: 500px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
@@ -99,8 +99,8 @@ header p {
   background-color: #039be5;
 }
 
-.filter-buttons button:active {
-  background-color: #16465c;
+.filter-buttons button .active {
+  background-color: #339fd1;
   color: #fff;
 }
 main section {
